@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import axios from 'axios';
 import { StyleSheet, View, Image, Text, StatusBar } from 'react-native';
+import axios from 'axios';
 
 const API_KEY = "4520bd98111d19b7";
 
