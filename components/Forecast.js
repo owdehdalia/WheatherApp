@@ -109,6 +109,7 @@ export default class Forecast extends React.Component {
       alignItems:'center',
       justifyContent:'center',
       borderWidth:2,
+      backgroundColor:'#CCFFFF',
       borderRadius:20
     },
     imageStyle:{
