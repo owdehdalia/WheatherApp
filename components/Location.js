@@ -9,7 +9,6 @@ export default class Location extends React.Component {
  constructor(props){
 		super(props);
 		this.state = {
-		 days: [],
 		 latitude:'',
 		 longitude:'',
 		 error:'',
@@ -42,6 +41,7 @@ export default class Location extends React.Component {
 		}
 		catch (error) {
 			alert(' error: ' + error.message);
+      this.setState({ error : 'something wrong' });
 		}
 	}
 
@@ -66,6 +66,7 @@ export default class Location extends React.Component {
     }
     catch (error) {
       alert('AsyncStorage error: ' + error.message);
+      his.setState({ error: error.message })
     }
   }
 
