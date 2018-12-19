@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Text   } from 'react-native';
-import WheatherPage from './pages/WheatherPage.js';
+import Location from '../components/Location.js';
+import Forecast from '../components/Forecast.js';
 
 
-export default class App extends React.Component {
+export default class WheatherPage extends React.Component {
 render() {
   return (
-  	<View style={styles.container}>
-     <WheatherPage/>
-  	</View>
+		<View style={styles.container}>
+      <Location/>
+      <Forecast/>
+		</View>
+
 	);
 }
  }
