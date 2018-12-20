@@ -22,7 +22,6 @@ export default class Forecast extends React.Component {
 	componentDidMount() {
     AsyncStorage.getItem('city').then((value) => { //get the city name saved from the storage
       this.setState({'city': value});
-      alert('fore'+this.state.city);
     });
     AsyncStorage.getItem('state').then((value) => {//get the state name saved from the storage
       this.setState({'state': value});
@@ -36,7 +35,6 @@ export default class Forecast extends React.Component {
 
 	async ForcastWheather(){
 		const request_url = "http://api.wunderground.com/api/" + API_KEY + "/forecast/q/" + 'WB' +'/'+ 'Ramallah'+ ".json";
-    alert(request_url);
     await  axios.get(request_url).then( (response) =>{
       if(response.status == 200){ // if the response is OK
         var predictedWheather = response.data.forecast.simpleforecast.forecastday;
@@ -104,12 +102,12 @@ export default class Forecast extends React.Component {
   		alignItems:'center',
   	},
     dayViewStyle:{
-      marginTop:5,
+      marginTop:20,
       width:Dimensions.get('window').width / 1.2,
       alignItems:'center',
       justifyContent:'center',
       borderWidth:2,
-      backgroundColor:'#CCFFFF',
+      backgroundColor:'#ADD8E6',
       borderRadius:20
     },
     imageStyle:{

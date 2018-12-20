@@ -11,7 +11,6 @@ export default class StartPage extends React.Component {
 
 
 handleStartClick(){ //to handle the start button and go to the wheather page
-  alert('hhh');
   Actions.WheatherPage();
 }
 handleExitClick(){ //to handle the exit button and exit from the app
@@ -22,8 +21,8 @@ render() {
 		<View style={styles.container}>
      <ImageBackground source = {backgroundImg} style = {styles.imageStyle}>
       <View style={styles.buttonsViewStyle}>
-       <Button title='Start' color='blue' buttonStyle = {styles.buttonStyle} onPress={this.handleStartClick}/>
-       <Button title='Exit' color='blue' buttonStyle = {styles.buttonStyle} onPress={this.handleExitClick}/>
+       <Button title='Start' color='#42A5F5' buttonStyle = {styles.buttonStyle} onPress={this.handleStartClick}/>
+       <Button title='Exit' color='#42A5F5' buttonStyle = {styles.buttonStyle} onPress={this.handleExitClick}/>
       </View>
      </ImageBackground>
 		</View>

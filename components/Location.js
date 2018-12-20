@@ -52,7 +52,6 @@ export default class Location extends React.Component {
 				city: response.data.location.city,
 				state: response.data.location.state
 			});
-      alert('loc'+this.state.city);
       this.saveItem('city', this.state.city);
       this.saveItem('state', this.state.state);
 
