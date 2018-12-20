@@ -8,8 +8,8 @@ export default class WheatherPage extends React.Component {
 render() {
   return (
 		<View style={styles.container}>
-      <Location/>
-      <Forecast/>
+     <Location/>
+     <Forecast/>
 		</View>
 
 	);
