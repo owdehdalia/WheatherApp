@@ -55,6 +55,6 @@ const styles = StyleSheet.create({
    borderColor: "transparent",
    borderWidth: 0,
    borderRadius: 5,
-   marginTop:350,
+   marginTop:450,
   }
 });
