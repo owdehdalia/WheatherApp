@@ -5,6 +5,9 @@ import Forecast from '../components/Forecast.js';
 
 
 export default class WheatherPage extends React.Component {
+  componentDidMount(){
+    alert('wheather');
+  }
 render() {
   return (
 		<View style={styles.container}>

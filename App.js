@@ -7,9 +7,9 @@ import Routes from './routes/Routes.js';
 export default class App extends React.Component {
 render() {
   return (
-  	<View style={styles.container}>
-     <Routes/>
-  	</View>
+     <View style={styles.container}>
+      <Routes/>
+     </View>
 	);
 }
  }
@@ -17,7 +17,6 @@ render() {
 const styles = StyleSheet.create({
 	container:{
 		flex:1,
-		justifyContent:'center',
-		alignItems:'center',
+
 	},
 });

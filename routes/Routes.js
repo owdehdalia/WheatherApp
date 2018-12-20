@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import {Router , Stack , Scene} from 'react-native-router-flux';
-import StartPage from '../pages/StartPage';
-import WheatherPage from '../pages/WheatherPage';
+import StartPage from '../pages/StartPage.js';
+import WheatherPage from '../pages/WheatherPage.js';
 
 
 
 
-export default class Routes extends Component<{}>
-{
+export default class Routes extends  React.Component{
   render(){
     return(
       <Router>
-       <Stack key="root" hideNavBar>
-        <Scene key="StartPage" component={StartPage} title="StartPage" initial={true}  />
-        <Scene key="WheatherPage" component={WheatherPage} title="WheatherPage" />
+       <Stack key="root">
+        <Scene key="StartPage" component={StartPage} title="" initial={true}  />
+        <Scene key="WheatherPage" component={WheatherPage} title="" initial = {false} />
 		   </Stack>
 			</Router>
 			);
