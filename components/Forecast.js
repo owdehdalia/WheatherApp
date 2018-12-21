@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { StyleSheet, View, Image, Text, StatusBar, AsyncStorage, Dimensions } from 'react-native';
 import axios from 'axios';
 import Location from '../components/Location.js';
-
 const API_KEY = "4520bd98111d19b7";
 
 export default class Forecast extends React.Component {
@@ -73,6 +72,7 @@ export default class Forecast extends React.Component {
 	}
 
   render() {
+
     return (
   		<View style={styles.container}>
       {
