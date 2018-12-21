@@ -33,7 +33,7 @@ export default class Forecast extends React.Component {
 
 
 	async ForcastWheather(){
-		const request_url = "http://api.wunderground.com/api/" + API_KEY + "/forecast/q/" + 'WB' +'/'+ 'Ramallah'+ ".json";
+		const request_url = "http://api.wunderground.com/api/" + API_KEY + "/forecast/q/" + this.state.state +'/'+ this.state.city+ ".json";
     await  axios.get(request_url).then( (response) =>{
       if(response.status == 200){ // if the response is OK
         var predictedWheather = response.data.forecast.simpleforecast.forecastday;
